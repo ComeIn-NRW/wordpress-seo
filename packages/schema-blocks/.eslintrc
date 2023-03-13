@@ -83,6 +83,9 @@
         "react/react-in-jsx-scope": 0,
         "no-shadow": "off",
         "@typescript-eslint/no-shadow": ["error"],
-        "no-use-before-define": [ "error", { "functions": false } ]
+        "no-use-before-define": [ "error", { "functions": false } ],
+        "import/named": "off",
+        "import/no-unresolved": "off",
+        "import/no-duplicates": "off"
     }
 }

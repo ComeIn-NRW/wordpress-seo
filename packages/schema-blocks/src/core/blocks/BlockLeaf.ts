@@ -39,6 +39,7 @@ export default abstract class BlockLeaf extends Leaf {
 	 */
 	protected renderChildren( children: BlockLeaf[], props: RenderSaveProps|RenderEditProps, type: "edit"|"save" ): JSX.Element[] {
 		return children.map( ( child, index )  => {
+			/* eslint-disable-next-line @typescript-eslint/no-explicit-any */
 			return createElement( Fragment, { key: index }, child[ type ]( props as any, index ) );
 		} );
 	}
